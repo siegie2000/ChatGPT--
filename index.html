@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gull and Bell</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Gull and Bell</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Gull and Bell</h2>
+            <div class="gallery-grid">
+                <!-- Add your image paths here -->
+                <img src="bar1.jpg" alt="Bar Image 1">
+                <img src="bar2.jpg" alt="Bar Image 2">
+                <img src="bar3.jpg" alt="Bar Image 3">
+                <img src="bar4.jpg" alt="Bar Image 4">
+                <img src="bar5.jpg" alt="Bar Image 5">
+                <!-- Add more images as needed -->
+            </div>
+            <p>Experience the best sea and bar vibes while enjoying our hourly specials.</p>
+            <button id="exploreButton">Explore Now</button>
+        </section>
+
+        <section id="specials">
+            <h2>Happy hour Specials</h2>
+            <p>Join us between 7-9pm for our exciting specials:</p>
+            <div class="grid">
+                <div class="special-item">Pushkin special: 2x doubles and a mix</div>
+                <div class="special-item">Richelieu: 2x doubles and a mix</div>
+                <div class="special-item">Captain Morgan Dark: 2x doubles and a mix</div>
+                <div class="special-item">Smirnoff Cider: 2x doubles and a mix</div>
+            </div>
+            <h2>Daily Specials</h2>
+            <div class="grid">
+                <div class="special-item">Black Label, Castle, Castle Lager: R54 for 2, and on</br></br> Fridays only: R52</div>
+                <div class="special-item">Olof, Vat69, Squadron, Belgravia: R59 for 2x doubles and a mix, and on </br></br>Fridays only: R55</div>
+            
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <div class="grid">
+                <div class="team-member">
+                    <img src="annetjie.jpg" alt="Annetjie">
+                    <h3>Annetjie</h3>
+                </div>
+                <div class="team-member">
+                    <img src="adriaan.jpg" alt="Adriaan">
+                    <h3>Adriaan</h3>
+                </div>
+                <div class="team-member">
+                    <img src="lilli.jpg" alt="Lilli">
+                    <h3>Lilli</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <!-- Add your image paths here -->
+                <img src="bar1.jpg" alt="Bar Image 1">
+                 <!-- Add more images as needed -->
+            </div>
+        </section>
+
+        <section id="events">
+            <h2>Events</h2>
+            <p>Join us for music trivia nights like "Noot vir Noot".</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="social-links">
+                <a href="https://wa.me/yourwhatsapplink" target="_blank">Join our WhatsApp Group</a>
+                <a href="https://www.facebook.com/yourfacebookpage" target="_blank">Follow us on Facebook</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gull and Bell. All rights reserved.</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="caption"></div>
+        <div class="modal-controls">
+            <button id="prev" class="modal-btn"><i class="fas fa-arrow-left"></i></button>
+            <button id="next" class="modal-btn"><i class="fas fa-arrow-right"></i></button>
+        </div>
+        <div class="modal-controls bottom">
+            <button id="zoom-in" class="modal-btn"><i class="fas fa-search-plus"></i></button>
+            <button id="zoom-out" class="modal-btn"><i class="fas fa-search-minus"></i></button>
+            <button id="fullscreen" class="modal-btn"><i class="fas fa-expand"></i></button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
